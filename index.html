@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Atharv Mishra | Cloud & AI Engineer</title>
+<title>Atharv Mishra | AI & Cloud Engineer</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -26,10 +26,12 @@
 
 <ul>
 <li><a href="#about">About</a></li>
+<li><a href="#journey">Journey</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#featured">Featured</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#github">GitHub</a></li>
+<li><a href="#analytics">Analytics</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
@@ -45,20 +47,18 @@ class="profile-pic">
 
 <h1>Atharv Mishra</h1>
 
-<h2>
-<span id="typing"></span>
-</h2>
+<h2>Building AI Systems, Cloud Applications and Scalable Products.</h2>
 
 <p>
-Building cloud-native applications, AI-powered systems,
-and scalable backend architectures.
+Computer Science Student at Bennett University specializing in Artificial Intelligence, Cloud Computing and Full Stack Development. Passionate about building intelligent products using AWS, Azure, Machine Learning and Modern Web Technologies.
 </p>
 
 <div class="hero-buttons">
 
 <a href="./assets/resume.pdf"
 target="_blank"
-class="btn primary">
+class="btn primary"
+id="resume-btn">
 Resume
 </a>
 
@@ -76,7 +76,8 @@ LinkedIn
 
 <a href="https://aether-sand-three.vercel.app/"
 target="_blank"
-class="btn primary">
+class="btn primary"
+id="aether-live-btn">
 Aether Live
 </a>
 
@@ -91,12 +92,7 @@ Aether Live
 <h2>About Me</h2>
 
 <p>
-I'm a Computer Science student at Bennett University specializing in
-Cloud Computing, Artificial Intelligence, AWS, Azure,
-Linux and Modern Web Development.
-
-I enjoy creating products that solve real-world problems using
-cloud infrastructure, AI systems and scalable architectures.
+I'm a Computer Science student at Bennett University specializing in Cloud Computing, Artificial Intelligence, AWS, Azure, Linux and Modern Web Development. I enjoy creating products that solve real-world problems using cloud infrastructure, AI systems and scalable architectures.
 </p>
 
 </section>
@@ -108,23 +104,65 @@ cloud infrastructure, AI systems and scalable architectures.
 <div class="stats-grid">
 
 <div class="stat">
-<h3>4+</h3>
-<p>Major Projects</p>
+<h3><span class="counter" data-target="4">0</span><span class="counter-suffix">+</span></h3>
+<p>Projects Built</p>
 </div>
 
 <div class="stat">
-<h3>AWS</h3>
-<p>Cloud Platform</p>
+<h3><span class="counter" data-target="3">0</span><span class="counter-suffix">+</span></h3>
+<p>Cloud Platforms</p>
 </div>
 
 <div class="stat">
-<h3>Azure</h3>
-<p>Cloud Platform</p>
+<h3><span class="counter" data-target="1000">0</span><span class="counter-suffix">+</span></h3>
+<p>Lines of Production Code</p>
 </div>
 
 <div class="stat">
-<h3>AI</h3>
-<p>ML & RAG Systems</p>
+<h3><span class="counter" data-target="2">0</span><span class="counter-suffix">+</span></h3>
+<p>AI Systems</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="journey" class="section">
+
+<h2>Journey</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<h3>2024</h3>
+<p>Lost & Launder</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<h3>2025</h3>
+<p>Fake News Detector</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<h3>2026</h3>
+<p>Zenith Medical AI</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<h3>2026</h3>
+<p>Aether</p>
+</div>
 </div>
 
 </div>
@@ -158,15 +196,27 @@ cloud infrastructure, AI systems and scalable architectures.
 
 <h2>Featured Work</h2>
 
-<div class="card">
+<div class="card featured-card">
 
 <h3>Aether</h3>
 
 <p>
-AI-powered music matchmaking platform that analyzes Spotify listening
-patterns to connect users with highly compatible music tastes.
-Built using React, Firebase and Vercel.
+AI-powered music matchmaking platform that analyzes Spotify listening patterns to connect users with highly compatible music tastes.
 </p>
+
+<div class="project-metrics">
+<span class="metric">Spotify OAuth Integration</span>
+<span class="metric">Real-time Chat System</span>
+<span class="metric">AI-Based Matching Engine</span>
+<span class="metric">Deployed on Vercel</span>
+</div>
+
+<div class="tech-tags">
+<span class="tech-tag">React</span>
+<span class="tech-tag">Firebase</span>
+<span class="tech-tag">Spotify API</span>
+<span class="tech-tag">Vercel</span>
+</div>
 
 <br>
 
@@ -178,7 +228,8 @@ Live Demo
 
 <a href="https://github.com/AtharvMishra14/aether"
 target="_blank"
-class="btn secondary">
+class="btn secondary"
+data-project-click="aether">
 GitHub
 </a>
 
@@ -197,9 +248,29 @@ GitHub
 <h3>Aether</h3>
 
 <p>
-AI-powered music matchmaking platform using Spotify APIs,
-Firebase and React.
+AI-powered music matchmaking platform using Spotify APIs, Firebase and React.
 </p>
+
+<div class="tech-tags">
+<span class="tech-tag">React</span>
+<span class="tech-tag">Firebase</span>
+<span class="tech-tag">Spotify API</span>
+</div>
+
+<br>
+
+<a href="https://aether-sand-three.vercel.app/"
+target="_blank"
+class="btn primary">
+Live Demo
+</a>
+
+<a href="https://github.com/AtharvMishra14/aether"
+target="_blank"
+class="btn secondary"
+data-project-click="aether">
+GitHub
+</a>
 
 </div>
 
@@ -208,15 +279,21 @@ Firebase and React.
 <h3>Zenith Medical AI</h3>
 
 <p>
-RAG-powered medical assistant built using ChromaDB,
-Llama 3 and AWS EC2.
+RAG-powered medical assistant built using ChromaDB, Llama 3 and AWS EC2.
 </p>
+
+<div class="tech-tags">
+<span class="tech-tag">ChromaDB</span>
+<span class="tech-tag">Llama 3</span>
+<span class="tech-tag">AWS EC2</span>
+</div>
 
 <br>
 
 <a href="https://github.com/AtharvMishra14/zenith-medical-ai"
 target="_blank"
-class="btn secondary">
+class="btn secondary"
+data-project-click="zenith">
 GitHub
 </a>
 
@@ -227,15 +304,21 @@ GitHub
 <h3>Fake News Detector</h3>
 
 <p>
-Machine learning application using TensorFlow and
-Scikit-Learn to detect misinformation.
+Machine learning application using TensorFlow and Scikit-Learn to detect misinformation.
 </p>
+
+<div class="tech-tags">
+<span class="tech-tag">TensorFlow</span>
+<span class="tech-tag">Scikit-Learn</span>
+<span class="tech-tag">Python</span>
+</div>
 
 <br>
 
 <a href="https://github.com/AtharvMishra14/Fake-News-Detection-1"
 target="_blank"
-class="btn secondary">
+class="btn secondary"
+data-project-click="fakenews">
 GitHub
 </a>
 
@@ -246,9 +329,14 @@ GitHub
 <h3>Lost & Launder</h3>
 
 <p>
-Serverless backend built using AWS Lambda,
-API Gateway and DynamoDB.
+Serverless backend built using AWS Lambda, API Gateway and DynamoDB.
 </p>
+
+<div class="tech-tags">
+<span class="tech-tag">AWS Lambda</span>
+<span class="tech-tag">API Gateway</span>
+<span class="tech-tag">DynamoDB</span>
+</div>
 
 </div>
 
@@ -264,6 +352,13 @@ API Gateway and DynamoDB.
 src="https://github-readme-stats.vercel.app/api?username=AtharvMishra14&show_icons=true&theme=tokyonight"
 width="100%"
 alt="GitHub Stats">
+
+<br><br>
+
+<img
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=AtharvMishra14&layout=compact&theme=tokyonight"
+width="100%"
+alt="Top Languages">
 
 <br><br>
 
@@ -294,16 +389,33 @@ alt="GitHub Contributions">
 
 </section>
 
-<section class="section">
+<section id="analytics" class="section">
 
-<h2>Resume Preview</h2>
+<h2>Portfolio Analytics</h2>
 
-<iframe
-src="./assets/resume.pdf"
-width="100%"
-height="800"
-style="border:none;border-radius:20px;background:white;">
-</iframe>
+<div class="analytics-grid">
+
+<div class="analytics-card">
+<h3><span class="analytics-counter" data-storage-key="resume-downloads">0</span></h3>
+<p>Resume Downloads</p>
+</div>
+
+<div class="analytics-card">
+<h3><span class="analytics-counter" data-storage-key="project-clicks">0</span></h3>
+<p>Project Clicks</p>
+</div>
+
+<div class="analytics-card">
+<h3><span class="analytics-counter" data-storage-key="aether-visits">0</span></h3>
+<p>Aether Visits</p>
+</div>
+
+<div class="analytics-card">
+<h3><span class="analytics-counter" data-storage-key="years-building">0</span></h3>
+<p>Years Building Projects</p>
+</div>
+
+</div>
 
 </section>
 
