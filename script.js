@@ -1,4 +1,75 @@
 /* ===========================
+   MICROSOFT CLARITY TRACKING
+=========================== */
+
+// Custom Clarity tracking functions for portfolio events
+// These functions are used to track user interactions with the portfolio
+
+const trackResumeDownload = () => {
+  if (window.clarity) {
+    clarity("event", "resume_download");
+  }
+};
+
+const trackGithubClick = () => {
+  if (window.clarity) {
+    clarity("event", "github_click");
+  }
+};
+
+const trackLinkedinClick = () => {
+  if (window.clarity) {
+    clarity("event", "linkedin_click");
+  }
+};
+
+const trackAetherVisit = () => {
+  if (window.clarity) {
+    clarity("event", "aether_visit");
+  }
+};
+
+const trackProjectClick = (projectName) => {
+  if (window.clarity) {
+    clarity("event", `project_click_${projectName}`);
+  }
+};
+
+// Initialize Clarity event tracking with automatic event listeners
+const initializeClarityTracking = () => {
+  // Resume button tracking (Hero section)
+  const resumeBtn = document.getElementById('resume-btn');
+  if (resumeBtn) {
+    resumeBtn.addEventListener('click', trackResumeDownload);
+  }
+
+  // Aether Live button tracking (Hero section)
+  const aetherLiveBtn = document.getElementById('aether-live-btn');
+  if (aetherLiveBtn) {
+    aetherLiveBtn.addEventListener('click', trackAetherVisit);
+  }
+
+  // GitHub profile links tracking (Multiple locations: Hero, Contact sections)
+  const githubLinks = document.querySelectorAll('a[href*="github.com/AtharvMishra14"]:not([data-project-click])');
+  githubLinks.forEach(link => {
+    link.addEventListener('click', trackGithubClick);
+  });
+
+  // LinkedIn profile links tracking (Hero and Contact sections)
+  const linkedinLinks = document.querySelectorAll('a[href*="linkedin.com/in/atharv-mishra"]');
+  linkedinLinks.forEach(link => {
+    link.addEventListener('click', trackLinkedinClick);
+  });
+
+  // Project GitHub links tracking (Featured and Projects sections)
+  const projectLinks = document.querySelectorAll('[data-project-click]');
+  projectLinks.forEach(link => {
+    const projectName = link.getAttribute('data-project-click');
+    link.addEventListener('click', () => trackProjectClick(projectName));
+  });
+};
+
+/* ===========================
    TYPED.JS INITIALIZATION
 =========================== */
 
@@ -228,4 +299,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initializeScrollReveal();
   initializeSmoothScroll();
   initializeNavbarTracking();
+  initializeClarityTracking();
 });
